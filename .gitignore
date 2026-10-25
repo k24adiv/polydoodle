@@ -1,0 +1,62 @@
+# Python virtual environments and local runtime caches
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Local editor / operating system metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+.env1.txt
+*.env
+*.env.*
+*.pem
+*.key
+*.crt
+*.p12
+
+# Log files and runtime operational records
+*.log
+bot_audit.log
+live_trades.log
+server.log
+
+# Private trading data / state files
+ptb_log.json
+ptb_log_backup.json
+window_counter.txt
+
+# Generated data exports and local CSV artifacts
+# Keep these explicit instead of ignoring all CSV files.
+dry_run_data.csv
+dry_run_data v3.csv
+dry_run_data v4.csv
+dry_run_data v5.csv
+
+# Local model and backup artifacts
+model.pkl
+model.pkl.bak
+*.pkl
+*.bak
+
+# Historical duplicate operational files to keep out of the initial commit
+main\ copy.py
+live_executor\ copy.py
+logger\ copy.py
+ptb_scanner\ copy.py
+signal_engine\ copy.py
+predictor\ copy.py
+setup_allowances\ copy.py
+check_trades\ copy.py
